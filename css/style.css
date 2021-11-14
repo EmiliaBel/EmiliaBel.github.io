@@ -1,0 +1,23 @@
+html{
+    background-color:aliceblue
+}
+header{
+    background-image: url("../img/4eb7f2b5475106d7bd57842b81b389de.jpg");
+    text-align: center;
+}
+#first{
+    background-color: black;
+    border: black 2px;
+}
+h2{
+    color: blanchedalmond;
+}
+h3{
+    color: blanchedalmond;
+}
+.div1{
+    background-color:blanchedalmond;
+}
+.div2{
+    background-color: black;
+}
