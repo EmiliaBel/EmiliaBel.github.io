@@ -5,76 +5,120 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Контакты</title>
-    <link href="css/style.css" rel="stylesheet" type="text/css"> 
+    <link href="../css/style.css" rel="stylesheet" type="text/css"> 
 </head>
 <body>
     <header>
         <nav>
-            <ul>
-                <li>
-                    <a href="./example.html">
-                        <img src="../img/logo_new_small_eng.jpg" width=70 height=69 alt="логотип">
-                    </a>
-                </li>
-                <li>
-                    <a href="./example.html">
-                        О себе
-                    </a>
-                </li>
-                <li>
-                    <a href="./competence.html">
-                        Компетенции
-                    </a>
-                </li>
-                <li>
-                    <a href="./resume.html">
-                        Резюме
-                    </a>
-                </li>
-                <li>
-                    <a href="./portfolio.html">
-                        Портфолио
-                    </a>
-                </li>
-                <li>
-                    <a href="./contacts.html">
-                        Контакты
-                        
-                    </a>
-                </li>
+            <a href="./about.html"><img src="../img/logo.jpg" height=80 alt="логотип"></a>
+            <ul class="menu">
+                <li><a href="./about.html">О себе</a></li>
+                <li><a href="./competence.html">Компетенции</a></li>
+                <li><a href="./resume.html">Резюме</a></li>
+                <li><a href="./portfolio.html">Портфолио</a></li>
+                <li><a href="./js.html">JavaScript</a></li>
+                <li><a href="./contacts.html">Контакты</a></li>
             </ul>
         </nav>
-        <h2>
-            Веб-технологии
-        </h2>
+        <div>
+            <h1>
+                Веб-технологии
+            </h1>
+            <h3>
+                Университет "Дубна"
+            </h3>
+        </div>
     </header>
     <main>
-        <div>
-            <h1>Контакты</h1>
-            <li>
-                <a href="https://vk.com/zoonte">
-                    <img src="../img/VK.com-logo.svg.png" width=100 height=95 alt="лого вк">
-                </a>
-                <a href="https://www.instagram.com/emi_bely/">
-                    <img src="../img/Instagram_logo_2016.svg.png" width=100 height=95 alt="лого инсты">
-                </a>
-            </li>
+        <div class="block_wrapper" id="contac">
+            <h3>Контакты</h3>
+            <div id="contac2">
+                <div class="contac21">
+                    <h4>Соцсети:</h4>
+                    <a href="https://vk.com/zoonte">
+                        <img src="../img/VK.com-logo.svg.png" width=40 alt="лого вк">
+                    </a>
+                    <a href="https://www.instagram.com/emmie_anbe/">
+                        <img src="../img/Instagram-logo.png" width=40 alt="лого инсты">
+                    </a>
+                    <a href="https://t.me/emmie_anbe">
+                        <img src="../img/1024px-Telegram_logo.svg.png" width=40 alt="лого тг">
+                    </a>
+                </div>
+                <div class="contac21">
+                    <h4>Почта:</h4>
+                    <p>beea.20@uni-dubna.ru</p>
+                </div>
+                <div class="contac21">
+                    <h4>Телефон:</h4>
+                    <p>8 905 130 39 85</p>
+                </div>
+            </div>
+            <div id="form">
+                <h3>Форма обратной связи</h3>
+                <form name="forma">
+                    <fieldset id="field">
+                        <div class="form2">
+                            <div class="form22">
+                                <label>Как удобно получить ответ?<br>
+                                    <label for="mail"><input type="radio" name="radio" onclick="smth">по почте</label> <br>
+                                    <label for="mobile"><input type="radio" name="radio" onclick="smth">по телефону</label> <br>
+                                    <label for="donneed"><input type="radio" name="radio" onclick="smth">не надо отвечать</label>
+                                </label>
+                            </div>
+                            <div class="form22">
+                                <label id="lbl">Укажите тему вопроса <br>
+                                    <select id="theme" name="slct">
+                                        <option value="работа">работа</option>
+                                        <option value="жизнь">жизнь</option>
+                                        <option value="смерть">смерть</option>
+                                    </select> 
+                                </label>
+                            </div>
+                            <div class="form22">
+                                <label>И ещё один вопрос <br>
+                                    <label><input type="checkbox"> может так</label> <br>
+                                    <label><input type="checkbox"> или так</label> <br>
+                                    <label><input type="checkbox"> или вот так </label>
+                                </label>
+                            </div>
+                            <div class="form21">
+                                <label for="name">Ваше имя</label>
+                                    <input type="text" id="name" name="name">
+                            </div>
+                            <div class="form21">
+                                <label for="telephone">Номер телефона</label>
+                                    <input type="tel" id="telephone" name="tel">
+                            </div>
+                            <div class="form21">
+                                <label for="email">Ваша почта</label>
+                                    <input type="email" id="email" name="email">
+                            </div>
+                            <div class="form22">
+                                <label>Ваш вопрос  <br>
+                                    <textarea id="question" name="txtarea"></textarea> <br> 
+                                </label>
+                                <button id="but">Отправить</button>
+                            </div>
+                        </div>                  
+                    </fieldset>
+                </form>
+            </div>
         </div>
     </main>
     <footer>
         <div>
-            <li>
-                <a href="https://vk.com/zoonte">
-                    <img src="../img/VK.com-logo.svg.png" width=70 height=65 alt="лого вк">
-                </a>
-                <a href="https://www.instagram.com/emi_bely/">
-                    <img src="../img/Instagram_logo_2016.svg.png" width=70 height=65 alt="лого инсты">
-                </a>
-            </li>
-            <li>
-                сайт разработан Беляковой Эмилией, Copyright © 2021
-            </li>
+            <a href="https://vk.com/zoonte">
+                <img src="../img/VK.com-logo.svg.png" width=40 alt="лого вк">
+            </a>
+            <a href="https://www.instagram.com/emmie_anbe/">
+                <img src="../img/Instagram-logo.png" width=40 alt="лого инсты">
+            </a>
+            <a href="https://t.me/emmie_anbe">
+                <img src="../img/1024px-Telegram_logo.svg.png" width=40 alt="лого тг">
+            </a>
         </div>
+        <p>сайт разработан Беляковой Эмилией, Copyright &copy 2021</p>
     </footer>
 </body>
 </html>
